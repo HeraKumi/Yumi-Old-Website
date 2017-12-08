@@ -1,5 +1,127 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div(style="height: 100vh")
+    div(class="flex-center flex-column")
+      img(class="img-fluid z-depth-1 rounded-circle fadeInLeft" src="/images/6.png")
+      h1(class="animated pulse mb-2") #[font(color="#E91E63") Yumi] Discord Bot
+      h5(class="animated fadeIn mb-1") Thank you for visting and maybe reading about my discord bot!
+      p(class="animated fadeIn text-muted") Hera Kumi | Inspried by: #[font(color="#D32F2F") Yui], #[font(color="#388E3C") Tatsumaki] #[i(class="fa fa-heart")]
+      br
+      a(href='https://discordbots.org/bot/373088211037061122')
+        img(src='https://discordbots.org/api/widget/373088211037061122.png', alt='Discord Bots')
+          
+  hr
+  div(style="height: 23vh")
+    div(class="flex-center flex-column")
+      h4 About  #[font(color="#E53935") Yumi]
+        p(class="animated fadeIn text-muted") Yumi At this point has was created with love, and as a for my myself to begin learning to code in #[a(href="https://nodejs.org/") nodejs] and has been a gateway for me to learn #[a(href="https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/") c#] , #[a(href="https://developers.google.com/edu/c++/") c++], #[a(href="https://docs.microsoft.com/en-us/dotnet/visual-basic/getting-started/") vb.net], and #[a(href="https://www.python.org/") python] along with learning #[a(href="http://sass-lang.com/") CSS3], #[a(href="http://expressjs.com/") Express]. and #[a(href="https://pugjs.org/api/getting-started.html") Pug].
+        br
+        p(class="animated fadeIn text-muted") #[font(color="#EF9A9A") Yumi] was built upon using #[a(href="https://github.com/Gawdl3y/discord.js-commando") DiscordJS-Commando framework] with having #[a(href="https://nodejs.org/") NodeJS] for the backend.
+  div(style="height: 23vh")
+    div(class="flex-center flex-column")
+      h4 #[font(color="#0288D1") Commands]
+  div(class="card")
+      div(class="card-body")
+          div(class="table-wrapper-2")
+              table(class="table table-responsive")
+                  
+                  thead(class="mdb-color lighten-4")
+                    tr
+                      th Settings
+                      th(class="th-l;g") Command
+                      th(class="th-l;g") Description
+                      th(class="th-l;g") Usage
+                  tbod
+                    tr
+                      th(scope="row") settings
+                        td config
+                        td Use this command for more information
+                        td !y. #[code config]
+              
+                  tbod
+                    tr
+                      th(scope="row") auto-role
+                        td auto-role
+                        td this command will allow users upon joining you're serve
+                        td !y. #[code setrole &lt;role&gt;]
+                        
+                  thead(class="mdb-color lighten-4")
+                      tr
+                        th Weeb
+                        th(class="th-l;g") Command
+                        th(class="th-l;g") Description
+                        th(class="th-l;g") Usage
+                  tbod
+                      tr
+                        th(scope="row") Weeb
+                          td anichar
+                          td This will use a plugin called kistu for searching anime character and return a pretty formated embed message
+                          td !y. #[code anicahr] #[code &lt;name&gt;]
+                      
+                        tr
+                          th(scope="row") Weeb
+                          td animedl
+                          td This command take what ever anime name and episode you want an spits out video download links with 3 video sources [Spanish subs]
+                          td !y. #[code animedl &lt;name&gt; &lt;episode&gt;]
+                          
+                        tr
+                          th(scope="row") Weeb
+                          td manga
+                          td Give !y. a manga and it will spit out a pretty formated embeded message telling you what the manga is about.
+                          td !y. #[code manga &lt;name&gt;]
+
+                  thead(class="mdb-color lighten-4")
+                      tr
+                        th General
+                        th(class="th-l;g") Command
+                        th(class="th-l;g") Description
+                        th(class="th-l;g") Usage
+                  tbod
+                      tr
+                        th(scope="row") general
+                          td Help
+                          td Yumi will send you a list of all available commands that you are available to use can use
+                          td !y. #[code help]
+                      tr
+                        th(scope="row") general
+                          td Stats
+                          td Once you issue this command you will be be able to see all available stats that !y. is willing to give about her self such as { Node version, Uptime, Bot Version, Current Github Commit  } theres alot more, use the command you're self to see it
+                          td !y. #[code stats]
+                      tr
+                        th(scope="row") general
+                          td Define
+                          td Yumi will define thousands of words you ask her to define
+                          td !y. #[code define &lt;word&gt;]
+                      tr
+                        th(scope="row") general
+                          td Server
+                          td Upon using this command !y. will gather and log you're server stats and display it in a embed message will alot of server information
+                          td  !y. #[code server]
+                      
+                      tr
+                        th(scope="row") general
+                          td Ip checker
+                          td Upon using this command !y. will gather and log you're server stats and display it in a embed message will alot of server information
+                          td  !y. #[code server]
+                          
+                  thead(class="mdb-color lighten-4")
+                      tr
+                        th Economy
+                        th(class="th-l;g") Command
+                        th(class="th-l;g") Description
+                        th(class="th-l;g") Usage
+                  tbod
+                      tr
+                        th(scope="row") money
+                          td money
+                          td Yumi will send you a list of all available commands that you a regualr use can use
+                          td !y. #[code money &lt;word&gt;]
+                          
+                      tr
+                        th(scope="row") setbalance
+                        td setbalance
+                        td any admin may set a balnce to a user's account with this command
+                        td !y. #[code setbalance &lt;@!y.&gt; &lt;5000&gt;]
+                          
+                          
