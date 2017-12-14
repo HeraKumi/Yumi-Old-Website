@@ -1,9 +1,109 @@
 extends layout
 
+block content
 
-block discord  
-    pre
-        code.
-            Admin Commands
-                Kick
-                Ban
+	div(style="height: 23vh")
+		div(class="flex-center flex-column")
+			h4 #[font(color="#0288D1") Commands]
+	div(class="card")
+		div(class="card-body")
+			div(class="table-wrapper-2")
+				table(class="table table-responsive")
+
+					thead(class="mdb-color lighten-4")
+						tr
+							th Settings
+							th(class="th-l;g") Command
+							th(class="th-l;g") Description
+							th(class="th-l;g") Usage
+					tbod
+						tr
+							th(scope="row") settings
+								td config
+								td Use this command for more information
+								td !y. #[code config]
+
+					tbod
+						tr
+							th(scope="row") settings
+								td auto-role
+								td this command will allow users upon joining you're serve
+								td !y. #[code setrole &lt;role&gt;]
+
+					thead(class="mdb-color lighten-4")
+						tr
+							th Weeb
+							th(class="th-l;g") Command
+							th(class="th-l;g") Description
+							th(class="th-l;g") Usage
+					tbod
+						tr
+							th(scope="row") Weeb
+								td anichar
+								td This will use a plugin called kistu for searching anime character and return a pretty formated embed message
+								td !y. #[code anicahr] #[code &lt;name&gt;]
+
+							tr
+								th(scope="row") Weeb
+								td animedl
+								td This command take what ever anime name and episode you want an spits out video download links with 3 video sources [Spanish subs]
+								td !y. #[code animedl &lt;name&gt; &lt;episode&gt;]
+
+							tr
+								th(scope="row") Weeb
+								td manga
+								td Give !y. a manga and it will spit out a pretty formated embeded message telling you what the manga is about.
+								td !y. #[code manga &lt;name&gt;]
+
+					thead(class="mdb-color lighten-4")
+						tr
+							th General
+							th(class="th-l;g") Command
+							th(class="th-l;g") Description
+							th(class="th-l;g") Usage
+					tbod
+						tr
+							th(scope="row") general
+								td Help
+								td Yumi will send you a list of all available commands that you are available to use.
+								td !y. #[code help]
+						tr
+							th(scope="row") general
+								td Stats
+								td Once you issue this command you will be be able to see all available stats that !y. is willing to give about her self such as { Node version, Uptime, Bot Version, Current Github Commit  } theres alot more, use the command you're self to see it
+								td !y. #[code stats]
+						tr
+							th(scope="row") general
+								td Define
+								td Yumi will define thousands of words you ask her to define
+								td !y. #[code define &lt;word&gt;]
+						tr
+							th(scope="row") general
+								td Server
+								td Upon using this command !y. will gather and log you're server stats and display it in a embed message will alot of server information
+								td  !y. #[code server]
+
+						tr
+							th(scope="row") general
+								td Ip checker
+								td A ip checker to see if a ip is a vpn or not
+								td  !y. #[code ip &lt;ip&gt]
+
+					thead(class="mdb-color lighten-4")
+						tr
+							th Economy
+							th(class="th-l;g") Command
+							th(class="th-l;g") Description
+							th(class="th-l;g") Usage
+					tbod
+						tr
+							th(scope="row") Economy
+								td money
+								td upon using this command you will be added to yumi's database and then given money in this case the default 1500. This will just check how much you have in you're account
+								td !y. #[code money &lt;word&gt;]
+
+						tr
+							th(scope="row") Economy
+							td setbalance
+							td any admin may set a balnce to a user's account with this command
+							td !y. #[code setbalance &lt;@!y.&gt; &lt;5000&gt;]
