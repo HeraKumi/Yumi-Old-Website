@@ -2,7 +2,7 @@ extends layout
 
 block content
   div(style="height: 100vh")
-    div(class="flex-center flex-column")
+    div(id="main", class="flex-center flex-column")
       img(class="img-fluid z-depth-1 rounded-circle fadeInLeft" src="/images/6.png")
   div(id="good")
     h1(class="animated pulse mb-2") #[font(color="#E91E63") Yumi] Discord Bot
@@ -15,11 +15,11 @@ block content
         img(src='https://discordbots.org/api/widget/373088211037061122.png', alt='Discord Bots')
       br
       span.badge.black
-        a(href="https://gitlab.com/HeraKumi")
-          i.fa.fa-gitlab.fa-2x(aria-hidden='true')
+        a(class="over", href="https://gitlab.com/HeraKumi")
+          i.fa.fa-gitlab.fa-2x(aria-hidden='true', class="animated pulse infinite")
       span.badge.blue
-        a(href="https://paypal.me/TMN")
-          i.fa.fa-paypal.fa-2x(aria-hidden='true')
+        a(class="over", href="https://paypal.me/TMN")
+          i.fa.fa-paypal.fa-2x(aria-hidden='true', class="animated pulse infinite")
 
 
 

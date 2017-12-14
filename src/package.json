@@ -6,9 +6,6 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "@angular/animations": "^5.1.1",
-    "@angular/cdk": "^5.0.1",
-    "@angular/material": "^5.0.1",
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
