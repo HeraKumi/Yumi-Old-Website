@@ -9,12 +9,11 @@ html(lang="en")
     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
     meta(http-equiv="x-ua-compatible" content="ie=edge")
 
-    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css")
-    link(href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet")
-    link(href="/stylesheets/bootstrap.min.css" rel="stylesheet")
-    link(href="/stylesheets/mdb.min.css" rel="stylesheet")
-    link(href="/stylesheets/style.css" rel="stylesheet")
+    link(rel="stylesheet", href="/stylesheets/bootstrap-material-design.css")
     link(rel="stylesheet", href="/stylesheets/font-awesome.css")
+    link(href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet")
+    link(rel="stylesheet", href="/stylesheets/mdb.css")
+    link(rel="stylesheet", href="/stylesheets/style.css")
 
     link(rel="apple-touch-icon" sizes="180x180" href="https://orig00.deviantart.net/7523/f/2014/057/6/0/umbreon_espeon_couple___render_by_xpuderzucker-d7824zb.png")
     link(rel="icon" type="image/png" href="https://orig00.deviantart.net/7523/f/2014/057/6/0/umbreon_espeon_couple___render_by_xpuderzucker-d7824zb.png" sizes="32x32")
@@ -23,7 +22,7 @@ html(lang="en")
     link(rel="mask-icon" href="hhttps://orig00.deviantart.net/7523/f/2014/057/6/0/umbreon_espeon_couple___render_by_xpuderzucker-d7824zb.png" color="#5bbad5")
     link(rel="shortcut icon" href="https://orig00.deviantart.net/7523/f/2014/057/6/0/umbreon_espeon_couple___render_by_xpuderzucker-d7824zb.png")
     
-    meta(property="og:url" content="http://yuumi.gq")
+    meta(property="og:url" content="http://bot.yumiboat.cf")
     meta(property="og:type" content="website")
     meta(property="og:title" content="Yuumi.gq | A Discord Bot Worth Protecting.")
     meta(property="og:description" content="A website made with minimal effort to get started.")
@@ -35,8 +34,19 @@ html(lang="en")
     meta(name="twitter:description" content="A website made with minimal effort to get started.")
     meta(name="twitter:image" content="https://orig00.deviantart.net/7523/f/2014/057/6/0/umbreon_espeon_couple___render_by_xpuderzucker-d7824zb.png")
     meta(name="twitter:image:src" content="https://orig00.deviantart.net/7523/f/2014/057/6/0/umbreon_espeon_couple___render_by_xpuderzucker-d7824zb.png")
-        
-  body
+    
+    nav.navbar.navbar-dark.justify-content-between
+      a(href="/")
+        button.btn.btn-outline-danger.waves-effect(type='button') Home
+      form.form-inline
+        a(href="/about")
+          button.btn.btn-outline-info.waves-effect(type='button') About
+        a(href="/commands")
+            button.btn.btn-outline-primary.waves-effect(type='button') Commands
+        a(href="/stats")
+            button.btn.btn-outline-success.waves-effect(type='button') Stats
+
+  body(style="background-color:#FAFAFA")
     center
       block content
     
@@ -46,26 +56,9 @@ html(lang="en")
 
   footer
     block footer
-        script(type="text/javascript" src="/javascripts/jquery-3.2.1.min.js")
-        script(type="text/javascript" src="/javascripts/popper.min.js")
-        script(type="text/javascript" src="/javascripts/bootstrap.min.js")
-        script(type="text/javascript" src="/javascripts/mdb.min.js")
-        script(src="/javascripts/anime.js")
-
-    footer(class="page-footer pink center-on-small-only pt-0")
-       div(class="container")
-           div(class="row")
-               div(class="col-md-12")
-                div(class="footer-socials mb-5 flex-center")
-                  
-                  a(href="https://twitter.com/_H3ra", class="icons-sm tw-ic")
-                    i(class="fa fa-twitter fa-lg white-text mr-md-4")
-
-                  a(href="https://www.instagram.com/hyestai/", class="icons-sm ins-ic")
-                    i(class="fa fa-instagram fa-lg white-text mr-md-4")
-
-       div(class="footer-copyright")
-           div(class="container-fluid")
-               p © 2016 Copyright:
-                a(href="http://yuumi.gq") Yuumi.gq
+        script(type="text/javascript" src="/javascripts/jquery-3.2.1.js")
+        script(type="text/javascript" src="/javascripts/popper.js")
+        script(type="text/javascript" src="/javascripts/mdb.js")
+        script(type="text/javascript" src="/javascripts/bootstrap.js")
+        script(type="text/javascript" src="/javascripts/bootstrap-material-design.js")        
                 

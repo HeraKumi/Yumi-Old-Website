@@ -11,4 +11,12 @@ router.get('/commands', function(req, res, next) {
   res.render('commands', { title: 'Commands' });
 });
 
+router.get('/stats', function(req, res, next) {
+  res.render('stats', { title: 'Stats' });
+});
+
+router.get('/about', function(req, res, next) {
+  res.render('about', { title: 'About Yumi' });
+});
+
 module.exports = router;
